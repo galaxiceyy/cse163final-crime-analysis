@@ -70,7 +70,6 @@ def crimeMap(crimeData, geoData):
     choropleth.geojson.add_child(folium.features.GeoJsonTooltip(['MCPP', 'Incidents'], labels = True))
     return seaMap
 
-
 def main():
     cleaned_crime_data = preprocess_crime_data('crime_analysis/SPD_Crime_Data.csv')
     geolocator = geopy.Nominatim(user_agent='myusername')
